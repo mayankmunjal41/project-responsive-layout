@@ -232,7 +232,7 @@ p {
     padding: 0;
   }
   .name-footer h3 {
-    margin-top: 10px
+    margin-top: 10px;
     padding-left: 0;
 
   }
@@ -304,7 +304,6 @@ p {
       width: 33.3%;
       padding: 1em;
     }
-  }
 
   .contact {
     max-width: 750px;
@@ -328,5 +327,4 @@ p {
   .main-header {
     padding: 30px 0;
   }
-
 }

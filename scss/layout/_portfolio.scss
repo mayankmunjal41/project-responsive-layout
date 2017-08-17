@@ -1,0 +1,61 @@
+
+.portfolio {
+  background-color: $secondary-background-color;
+  padding: 50px 0;
+  @extend %line-font;
+  @extend %centered;
+  @media #{$brk-wide} {
+    padding-top: 30px;
+  }
+}
+
+.clearfix::after {
+  @media #{$brk-narrow} {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+.col {
+   @media #{$brk-narrow} {
+     float: left;
+   }
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  @media #{$brk-narrow} {
+    width: 50%;
+    height: 475px;
+  }
+    @media #{$brk-wide} {
+      width: 33.3%;
+      padding: 1em;
+    }
+}
+
+.first, .third, .fifth {
+  @media #{$brk-narrow} {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+.second, .fourth, .sixth {
+  @media #{$brk-narrow} {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+}
+
+.wrapper {
+    @media #{$brk-narrow} {
+      width: 100%;
+      margin: 0 auto;
+  }
+    @media #{$brk-wide} {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1150px;
+    }
+  }

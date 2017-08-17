@@ -1,0 +1,23 @@
+.main {
+  margin-top: 40px;
+  @extend %line-font;
+  @extend %centered;
+}
+
+.introduction {
+  @media #{$brk-narrow} {
+    text-align: left;
+    padding-left: 30px;
+  }
+  @media #{$brk-wide} {
+    text-align: left;
+    padding-left: 0;
+  }
+}
+
+.profile-pic {
+  @media #{$brk-narrow} {
+    float: right;
+    margin: 0 20px 30px 20px;
+}
+}

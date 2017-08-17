@@ -1,0 +1,16 @@
+.contact, .skills {
+  @extend %line-font;
+  @extend %centered;
+  padding: 50px 0;
+}
+
+.contact-details {
+  padding-top: 20px;
+}
+
+.contact {
+  @media #{$brk-wide} {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}

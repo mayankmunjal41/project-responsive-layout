@@ -1,0 +1,60 @@
+.main {
+  &-nav li {
+    background-color: $secondary-background-color;
+    @include text(20px, 0 5px 10px);
+    @extend %centered;
+
+    @media #{$brk-narrow} {
+      display: inline-block;
+      text-align: center;
+    }
+    @media #{$brk-wide} {
+      margin-bottom: 0px;
+      display: block;
+      float: left;
+    }
+  }
+
+  &-header {
+    @extend %centered;
+    margin-top: 0;
+    padding: 0;
+    @media #{$brk-wide} {
+      padding: 30px 0;
+    }
+  }
+
+  &-nav a {
+    padding: 20px 0;
+    display: block;
+    @media #{$brk-wide} {
+      padding: 0;
+    }
+  }
+
+  &-nav {
+    @media #{$brk-narrow} {
+      margin-right: 0;
+    }
+  }
+  @media #{$brk-wide} {
+    @include text(0.8em, 20px 0 0 0, right);
+    padding-top: 10px;
+    font-size: 1em;
+  }
+}
+
+
+.name {
+  @extend %centered;
+  @media #{$brk-narrow} {
+    display: inline-block;
+    text-align: center;
+    @include text(2em, 50px 0 0 0);
+  }
+  @media #{$brk-wide} {
+    @include text(1.5em, 0 0 0 0, left);
+    width: 50%;
+    text-align: left;
+  }
+}

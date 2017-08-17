@@ -16,6 +16,7 @@ h1 {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .main-nav li {
@@ -26,9 +27,6 @@ ul {
   margin-right: 1.5em;
 }
 
-ul {
-  padding: 0;
-}
 
 a {
   text-decoration: none;
@@ -81,12 +79,6 @@ p {
   padding: 50px 0;
 }
 
-.main, .portfolio, .contact, .skills {
-  line-height: 2.0rem;
-  font-size: 20px;
-  text-align: center;
-}
-
 .contact, .skills {
   padding: 50px 0;
 }
@@ -130,31 +122,36 @@ p {
     padding-top: 0;
   }
 
-  img {
-    padding: 0;
-  }
-
-  p {
+  img, p {
     padding: 0;
   }
 
   .name, .main-nav li {
     display: inline-block;
-    text-align: center;
+    @extend %centered;
   }
 
   .main-nav li {
-    font-size: 1em;
-    background-color: snow;
-    margin-left: 20px;
-    margin-right: 0;
+    @include text(1em, 0 0 0 20px)
+    background-color: $primary-background-color;
   }
 
+  // .main-nav li {
+  //   font-size: 1em;
+  //   background-color: snow;
+  //   margin-left: 20px;
+  //   margin-right: 0;
+  // }
+
   .name {
-    font-size: 2em;
-    margin-top: 50px;
-    margin-bottom: 0;
+    @include text(2em, 50px 0 0 0);
   }
+
+  // .name {
+  //   font-size: 2em;
+  //   margin-top: 50px;
+  //   margin-bottom: 0;
+  // }
 
   .middle-list {
     margin: 0 50px;
@@ -273,20 +270,31 @@ p {
     padding-left: 0;
   }
 
+  // .name {
+  //   width: 50%;
+  //   float: left;
+  //   text-align: left;
+  //   margin-top: 32px;
+  //   font-size: 1.5em;
+  // }
+
   .name {
+    @include text(1.5em, 32px 0 0 0, float: left);
     width: 50%;
-    float: left;
     text-align: left;
-    margin-top: 32px;
-    font-size: 1.5em;
   }
 
+  // .main-nav {
+  //   float: right;
+  //   margin-bottom: 0px;
+  //   margin-top: 32px;
+  //   font-size: 0.8em;
+  //   margin-right: 20px;
+  // }
+
+
   .main-nav {
-    float: right;
-    margin-bottom: 0px;
-    margin-top: 32px;
-    font-size: 0.8em;
-    margin-right: 20px;
+    @include text(0.8em, 32px 20px 0 0, float: right);
   }
 
   .main-nav a {

@@ -5,8 +5,8 @@
 body {
   font-family: $font-stack;
   background-color: $primary-background-color;
-  color: $color-prim;
   margin: 0 auto;
+  @include color($color-prim, 20px, 20px);
 }
 
 h1 {

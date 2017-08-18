@@ -4,8 +4,10 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: snow;
+  margin: 0 auto;
   color: dimgray;
-  margin: 0 auto; }
+  font-size: 20px;
+  font-weight: 20px; }
 
 h1 {
   font-size: 40px; }

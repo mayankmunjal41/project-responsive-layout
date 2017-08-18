@@ -3,3 +3,9 @@
   margin: $margin;
   float: $float;
 }
+
+@mixin color($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
